@@ -1,0 +1,17 @@
+.Signup {
+    margin: 10% auto;
+    width: 40vw;
+    height: 45vh;
+}
+
+.Signup-form {
+    padding: 50px;
+}
+
+.Signup-input {
+    margin-top: 15px !important;
+}
+
+.Signup button {
+    margin: 20px 3px;
+}

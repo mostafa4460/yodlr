@@ -1,0 +1,21 @@
+.Navbar-logo {
+    display: flex;
+    flex: 1;
+}
+
+.Navbar-link {
+    margin-left: 20px !important;
+}
+
+.Navbar a {
+    color: #eceff1;
+    text-decoration: none;
+}
+.Navbar a:hover {
+    color: black;
+    font-weight: 900;
+}
+.Navbar a.active {
+    color: black;
+    font-weight: 900;
+}

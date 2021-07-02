@@ -4,7 +4,7 @@ var _ = require('lodash');
 var logger = require('../lib/logger');
 var log = logger();
 
-var users = require('../../init_data.json').data;
+var users = require('../init_data.json').data;
 var curId = _.size(users);
 
 /* GET users listing. */

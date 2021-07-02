@@ -1,0 +1,15 @@
+.Home {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: url('../assets/img/home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.Home h1 {
+    width: 100vw;
+    justify-self: center;
+    align-self: center;
+}
