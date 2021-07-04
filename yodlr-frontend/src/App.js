@@ -4,7 +4,9 @@ import {Switch, Route, Redirect} from 'react-router-dom';
 import {ThemeProvider, createMuiTheme} from '@material-ui/core';
 import Navbar from './components/Navbar';
 import Signup from './pages/Signup';
+import Edit from './pages/Edit';
 import Home from './pages/Home';
+import Admin from './pages/Admin';
 import Error from './pages/Error';
 import './App.css';
 
@@ -34,16 +36,19 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/admin">
-            <h1>Admin Page</h1>
+            <Admin />
           </Route>
           <Route exact path="/signup">
             <Signup />
           </Route>
-          <Route exact path="/">
-            <Home />
+          <Route exact path="/:id">
+            <Edit />
           </Route>
           <Route exact path="/error">
             <Error />
+          </Route>
+          <Route exact path="/">
+            <Home />
           </Route>
           <Redirect to="/" />
         </Switch>

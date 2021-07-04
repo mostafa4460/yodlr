@@ -38,6 +38,39 @@ class YodlrApi {
             throw err;
         }
     }
+
+    /** Get all users 
+     * gets list of all users in the DB
+    */
+
+    static async getUsers() {
+        return await this.request('users/', 'get');
+    }
+
+    /** Get a user by id 
+     * returns {id, email, firstName, lastName, state}
+    */
+
+    static async getUser(id) {
+        return await this.request(`users/${id}`, 'get');
+    }
+
+    /** Updates an existing user
+     * should not be able to change the id
+     * returns {id, email, firstName, lastName, state}
+    */
+
+    static async updateUser(user) {
+        return await this.request(`users/${user.id}`, 'put', user);
+    }
+
+    /** Deletes an existing user
+     * returns {id, email, firstName, lastName, state}
+    */
+
+    static async deleteUser(id) {
+        return await this.request(`users/${id}`, 'delete');
+    }
 }
 
 export default YodlrApi;

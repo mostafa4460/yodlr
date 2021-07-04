@@ -1,0 +1,21 @@
+.Edit {
+    margin: 10% auto;
+    width: 40vw;
+    height: 50vh;
+}
+
+.Edit-spinner {
+    margin: 10% auto;
+}
+
+.Edit-form {
+    padding: 50px;
+}
+
+.Edit-input {
+    margin-top: 15px !important;
+}
+
+.Edit button {
+    margin: 20px 3px;
+}
